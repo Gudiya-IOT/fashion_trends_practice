@@ -3,15 +3,15 @@ const getusercontroller = require("../controllers/users/getusercontroller");
 const express = require("express");
 const router = express.Router();
 
-router.get("/",getusercontroller);
-router.get("/role/:role",getusercontroller);
-router.get("/gender/:gender",getusercontroller);
-router.get("/age/:age",getusercontroller);
+router.get("/users",getusercontroller);
+router.get("/users/role/:role",getusercontroller);
+router.get("/users/gender/:gender",getusercontroller);
+router.get("/users/age/:age",getusercontroller);
 
-router.get("/random",getusercontroller);
-router.get("/highest-skills",getusercontroller);
-router.get("/lowtohigh",getusercontroller);
-router.get("/hightolow",getusercontroller);
+router.get("/users/random",getusercontroller);
+router.get("/users/highest-skills",getusercontroller);
+router.get("/users/lowtohigh",getusercontroller);
+router.get("/users/hightolow",getusercontroller);
 
 
 
